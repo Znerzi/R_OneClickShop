@@ -1,0 +1,332 @@
+body {
+    font-family: "Karla", sans-serif;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(28, 218, 218);
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure navbar stays on top of other content */
+}
+
+.company-name {
+    color: white;
+    margin-right: auto;
+    font-size: larger;
+    margin-left: 25px;
+    font-family: "Karla", sans-serif;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-right: 8rem;
+    float: right;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Add smooth transition effect */
+}
+
+.navbar ul li a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 45px;
+}
+
+.navbar .logo img {
+    height: 75px;
+    margin-left: 45px;
+}
+
+/* Burger Icon Styling */
+.burger-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .burger-icon {
+        display: flex;
+        margin-right: 50px;
+    }
+
+    .navbar ul.active {
+        display: block;
+    }
+}
+
+
+/* content */
+
+.content {
+    font-size: 18px;
+    margin-left: 6rem;
+    margin-top: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    font-weight: bold;
+    color:rgb(97, 71, 5);
+}
+
+.content p {
+    max-width: 430px;
+    padding-bottom: 15px;
+
+}
+
+.details{
+    margin-right: 9rem;
+}
+
+.View-button {
+    width: 70px;
+    height: 40px;
+    border: none;
+    color: #333;
+    font-weight: bolder;
+    font-size: 15px;
+    background-color: rgb(9, 180, 9);
+    border-radius: 20px;
+    transition: 0.3s ease-in;
+}
+
+.View-button:hover{
+    transition: 0.3s ease-out;
+    color: rgb(28, 218, 218);
+    background-color: #333;
+}
+
+/************************************************************* icons **********************************************************************/
+
+.icon-content{
+    margin-top: 55px;
+    display: flex;
+    justify-content:center;
+    padding-top: 30px;
+    margin-bottom: 2px;
+}
+
+.icons {
+    margin: 30px;
+    width: 250px;
+    height: 270px;
+}
+
+.icons i {
+    font-size: 40px;
+    margin-right: 10px; 
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.icons p {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
+
+.icons i:hover {
+    transform: scale(1.6);
+}
+
+.icons p:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease; 
+}
+
+/*************************************************************************** Top Menus ****************************************************************************/
+
+.menus section{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Arial Narrow Bold';
+    color: rgb(136, 123, 107);
+}
+
+.menus p h1{
+    text-align: center;
+}
+
+.cards-content {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.cards {
+    margin: 25px;
+    background-color: #333;
+    color: rgb(28, 218, 218);
+    max-width: 320px;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.cards img {
+    width: 95%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 8px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.cards button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 80%;
+    margin-bottom: 11px;
+}
+
+.cards button:hover {
+    background-color: #333;
+    color: rgb(28, 218, 218);
+    border: 2px solid rgb(28, 218, 218);
+}
+
+.cards:hover {
+    transform: scale(1.02); /* Scale the paragraph slightly when hovered */
+    transition: transform 0.3s ease-in-out; /* Add transition property for smooth animation */
+}
+
+/********************************************************** Logistics Partners **********************************************************/
+
+.shipping-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.logis-contents {
+    width: 350px; /* Adjust width as needed */
+    margin: 50px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 10px; /* Spacing between photos */
+}
+
+.images img {
+    width: 100%; /* Set width to occupy the entire grid cell */
+    height: auto; /* Allow height to adjust automatically */
+    max-width: 100%; /* Ensure images don't exceed container width */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+.logis-button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    color: #333;
+    font-weight: bolder;
+    font-size: 15px;
+    background-color: rgb(9, 180, 9);
+    border-radius: 20px;
+    transition: 0.3s ease-in;
+}
+
+.logis-button:hover{
+    transition: 0.3s ease-out;
+    color: rgb(28, 218, 218);
+    background-color: #333;
+}
+
+
+/*******************************************************footer**************************************************************************************/
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    margin-top: 150px;
+}
+
+.footer-contents {
+    color: rgb(28, 218, 218);
+    margin-top: 45px;
+    height: 220px;
+    width: 270px;
+    align-items: center;
+}
+
+.footer-contents h1 {
+    font-size: 28px;
+}
+
+.icons-shit i:hover {
+    background-color: #333;
+    color: rgb(28, 218, 218);
+}
+
+.icons-shit i:hover {
+    transform: scale(1.3); /* Scale the paragraph slightly when hovered */
+    transition: transform 0.3s ease-in-out; /* Add transition property for smooth animation */
+}
+
+
+.footer-contents a{
+    display: flex;
+    color: rgb(28, 218, 218);
+    text-decoration: none;
+}
+
+.icons-shit {
+    display: flex;
+}
+
+.icons-shit a {
+    margin-left: 0;
+    margin: 10px;
+    font-size: 28px;
+}
+
+/************************************************************* Interactivity *************************************************************/
+
+@media only screen and (max-width: 768px) {
+    /* Add CSS for mobile devices here */
+}
